@@ -32,8 +32,53 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForElementPresent</td>
+	<td>name=sliderleft</td>
+	<td></td>
+</tr>
+<tr>
+	<td>focus</td>
+	<td>name=sliderleft</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=sliderleft</td>
+	<td></td>
+</tr>
+<tr>
 	<td>sendKeys</td>
-	<td>//div/div/div/div/div/div/div/ul/li/input</td>
+	<td>name=sliderleft</td>
+	<td>2013</td>
+</tr>
+<tr>
+	<td>fireEvent</td>
+	<td>name=sliderleft</td>
+	<td>blur</td>
+</tr>
+<tr>
+	<td>focus</td>
+	<td>name=sliderright</td>
+	<td></td>
+</tr>
+<tr>
+	<td>type</td>
+	<td>name=sliderright</td>
+	<td></td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>name=sliderright</td>
+	<td>2013</td>
+</tr>
+<tr>
+	<td>fireEvent</td>
+	<td>name=sliderright</td>
+	<td>blur</td>
+</tr>
+<tr>
+	<td>sendKeys</td>
+	<td>//div[@data-filter='complex-element-container']//ul/li/input</td>
 	<td>M82473</td>
 </tr>
 <tr>
@@ -48,7 +93,7 @@
 </tr>
 <tr>
 	<td>sendKeys</td>
-	<td>//div/div/div/div/div/div/div/ul/li/input</td>
+	<td>//div[@data-filter='complex-element-container']//ul/li/input</td>
 	<td>M82423</td>
 </tr>
 <tr>
@@ -63,7 +108,7 @@
 </tr>
 <tr>
 	<td>sendKeys</td>
-	<td>//div/div/div/div/div/div/div/ul/li/input</td>
+	<td>//div[@data-filter='complex-element-container']//ul/li/input</td>
 	<td>M82476</td>
 </tr>
 <tr>
@@ -78,7 +123,7 @@
 </tr>
 <tr>
 	<td>sendKeys</td>
-	<td>//div/div/div/div/div/div/div/ul/li/input</td>
+	<td>//div[@data-filter='complex-element-container']//ul/li/input</td>
 	<td>M82426</td>
 </tr>
 <tr>
@@ -93,7 +138,7 @@
 </tr>
 <tr>
 	<td>sendKeys</td>
-	<td>//div/div/div/div/div/div/div/ul/li/input</td>
+	<td>//div[@data-filter='complex-element-container']//ul/li/input</td>
 	<td>M82443</td>
 </tr>
 <tr>
@@ -108,7 +153,7 @@
 </tr>
 <tr>
 	<td>sendKeys</td>
-	<td>//div/div/div/div/div/div/div/ul/li/input</td>
+	<td>//div[@data-filter='complex-element-container']//ul/li/input</td>
 	<td>M82463</td>
 </tr>
 <tr>
@@ -123,7 +168,7 @@
 </tr>
 <tr>
 	<td>sendKeys</td>
-	<td>//div/div/div/div/div/div/div/ul/li/input</td>
+	<td>//div[@data-filter='complex-element-container']//ul/li/input</td>
 	<td>M82446</td>
 </tr>
 <tr>
@@ -138,7 +183,7 @@
 </tr>
 <tr>
 	<td>sendKeys</td>
-	<td>//div/div/div/div/div/div/div/ul/li/input</td>
+	<td>//div[@data-filter='complex-element-container']//ul/li/input</td>
 	<td>M82466</td>
 </tr>
 <tr>
@@ -167,6 +212,21 @@
 	<td>appendix</td>
 </tr>
 <tr>
+	<td>selectWindow</td>
+	<td>null</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>//div[@id='PalgaSample-tab']/div/div/div[2]/div/div/div/div/a/b</td>
+	<td></td>
+</tr>
+<tr>
+	<td>click</td>
+	<td>xpath=(//a[contains(text(),'AND')])[2]</td>
+	<td></td>
+</tr>
+<tr>
 	<td>waitForVisible</td>
 	<td>css=.select2-result</td>
 	<td></td>
@@ -175,41 +235,6 @@
 	<td>clickAt</td>
 	<td>css=.select2-result</td>
 	<td>10,10</td>
-</tr>
-<tr>
-	<td>waitForElementPresent</td>
-	<td>name=sliderleft</td>
-	<td></td>
-</tr>
-<tr>
-	<td>focus</td>
-	<td>name=sliderleft</td>
-	<td></td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>name=sliderleft</td>
-	<td></td>
-</tr>
-<tr>
-	<td>sendKeys</td>
-	<td>name=sliderleft</td>
-	<td>2013</td>
-</tr>
-<tr>
-	<td>focus</td>
-	<td>name=sliderright</td>
-	<td></td>
-</tr>
-<tr>
-	<td>type</td>
-	<td>name=sliderright</td>
-	<td></td>
-</tr>
-<tr>
-	<td>sendKeys</td>
-	<td>name=sliderright</td>
-	<td>2013</td>
 </tr>
 <tr>
 	<td>pause</td>
@@ -228,10 +253,9 @@
 </tr>
 <tr>
 	<td>assertText</td>
-	<td>//div[@id='aggregate-table-container']/table/tbody/tr[4]/td[3]/div</td>
+	<td>//div[@id='aggregate-table-container']/table/tbody/tr[3]/td[3]/div</td>
 	<td>61</td>
 </tr>
-
 </tbody></table>
 </body>
 </html>

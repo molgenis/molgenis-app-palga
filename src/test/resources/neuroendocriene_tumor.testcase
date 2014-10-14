@@ -172,6 +172,11 @@
 	<td>2013</td>
 </tr>
 <tr>
+	<td>fireEvent</td>
+	<td>name=sliderleft</td>
+	<td>blur</td>
+</tr>
+<tr>
 	<td>focus</td>
 	<td>name=sliderright</td>
 	<td></td>
@@ -185,6 +190,11 @@
 	<td>sendKeys</td>
 	<td>name=sliderright</td>
 	<td>2013</td>
+</tr>
+<tr>
+	<td>fireEvent</td>
+	<td>name=sliderright</td>
+	<td>blur</td>
 </tr>
 <tr>
 	<td>pause</td>
@@ -205,6 +215,11 @@
 	<td>assertText</td>
 	<td>//div[@id='aggregate-table-container']/table/tbody/tr[4]/td[3]/div</td>
 	<td>1410</td>
+</tr>
+<tr>
+	<td>focus</td>
+	<td>name=sliderleft</td>
+	<td></td>
 </tr>
 </tbody></table>
 </body>
