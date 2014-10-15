@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="selenium.base" href="http://molgenis20.target.rug.nl/" />
+<link rel="selenium.base" href="http://molgenis68.target.rug.nl/" />
 <title>tumor tractus</title>
 </head>
 <body>
@@ -77,6 +77,11 @@
 	<td></td>
 </tr>
 <tr>
+	<td>waitForVisible</td>
+	<td>//div[@id='aggregate-table-container']/table/tbody/</td>
+	<td></td>
+</tr>
+<tr>
 	<td>waitForNotVisible</td>
 	<td>css=#spinner</td>
 	<td></td>
@@ -99,6 +104,11 @@
 <tr>
 	<td>pause</td>
 	<td>1000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>waitForNotVisible</td>
+	<td>css=#spinner</td>
 	<td></td>
 </tr>
 <tr>
