@@ -1,28 +1,29 @@
 package org.molgenis.selenium;
 
+import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.fail;
+
 import java.util.concurrent.TimeUnit;
 
-import junit.framework.TestCase;
-
-import org.junit.After;
-import org.junit.Before;
-import org.junit.Test;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
 
-public class VrouwCytoTestCase extends TestCase
+@Test
+public class VrouwCytoTestCase
 {
 	private WebDriver driver;
 	private String baseUrl;
 	private boolean acceptNextAlert = true;
 	private StringBuffer verificationErrors = new StringBuffer();
 
-	@Override
-	@Before
+	@BeforeTest
 	public void setUp() throws Exception
 	{
 		driver = new FirefoxDriver();
@@ -68,8 +69,7 @@ public class VrouwCytoTestCase extends TestCase
 						.getText());
 	}
 
-	@Override
-	@After
+	@AfterTest
 	public void tearDown() throws Exception
 	{
 		driver.quit();
