@@ -11,7 +11,7 @@ import org.springframework.web.WebApplicationInitializer;
 
 public class WebAppInitializer extends MolgenisWebAppInitializer implements WebApplicationInitializer
 {
-	private static final int MAX_FILE_SIZE = 1024;
+	private static final int MAX_FILE_SIZE = 4096;
 
 	@Override
 	public void onStartup(ServletContext servletContext) throws ServletException
