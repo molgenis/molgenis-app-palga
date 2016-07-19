@@ -4,7 +4,7 @@
     <parent>
         <groupId>org.molgenis</groupId>
         <artifactId>molgenis</artifactId>
-        <version>1.4.4</version>
+        <version>1.4.5-SNAPSHOT</version>
     </parent>
     <artifactId>molgenis-palga</artifactId>
     <packaging>war</packaging>
@@ -180,11 +180,6 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.molgenis</groupId>
-            <artifactId>molgenis-das</artifactId>
-            <version>${project.parent.version}</version>
         </dependency>
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
