@@ -36,7 +36,7 @@ public class PalgaSampleMetaData extends DefaultEntityMetaData
 				.setLabel("Geslacht").setAggregateable(true);
 		addAttribute(ATTR_AGE).setDataType(CATEGORICAL).setRefEntity(AgegroupMetaData.INSTANCE).setNillable(false)
 				.setLabel("Leeftijdscategorie").setAggregateable(true);
-		addAttribute(ATTR_YEAR).setDataType(INT).setNillable(false).setRange(new Range(1991l, 2016l)).setLabel("Jaar")
+		addAttribute(ATTR_YEAR).setDataType(INT).setNillable(false).setRange(new Range(1991l, 2017l)).setLabel("Jaar")
 				.setAggregateable(true).setDescription("Jaar van verslaglegging");
 	}
 }
