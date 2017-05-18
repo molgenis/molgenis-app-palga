@@ -4,10 +4,12 @@
     <parent>
         <groupId>org.molgenis</groupId>
         <artifactId>molgenis</artifactId>
-        <version>1.4.6-SNAPSHOT</version>
+        <version>1.4.4</version>
     </parent>
     <artifactId>molgenis-palga</artifactId>
     <packaging>war</packaging>
+    <version>1.4.6-PALGA-SNAPSHOT</version>
+
     <build>
         <resources>
             <resource>
@@ -162,11 +164,6 @@
         <dependency>
             <groupId>org.molgenis</groupId>
             <artifactId>molgenis-data-rest</artifactId>
-            <version>${project.parent.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.molgenis</groupId>
-            <artifactId>molgenis-das</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
         <dependency>
