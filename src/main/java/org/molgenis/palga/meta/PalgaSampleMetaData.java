@@ -1,11 +1,9 @@
 package org.molgenis.palga.meta;
 
-import static org.molgenis.MolgenisFieldTypes.CATEGORICAL;
-import static org.molgenis.MolgenisFieldTypes.INT;
-import static org.molgenis.MolgenisFieldTypes.MREF;
-
 import org.molgenis.data.Range;
 import org.molgenis.data.support.DefaultEntityMetaData;
+
+import static org.molgenis.MolgenisFieldTypes.*;
 
 public class PalgaSampleMetaData extends DefaultEntityMetaData
 {
@@ -36,7 +34,7 @@ public class PalgaSampleMetaData extends DefaultEntityMetaData
 				.setLabel("Geslacht").setAggregateable(true);
 		addAttribute(ATTR_AGE).setDataType(CATEGORICAL).setRefEntity(AgegroupMetaData.INSTANCE).setNillable(false)
 				.setLabel("Leeftijdscategorie").setAggregateable(true);
-		addAttribute(ATTR_YEAR).setDataType(INT).setNillable(false).setRange(new Range(1991l, 2017l)).setLabel("Jaar")
+		addAttribute(ATTR_YEAR).setDataType(INT).setNillable(false).setRange(new Range(1991l, 2018l)).setLabel("Jaar")
 				.setAggregateable(true).setDescription("Jaar van verslaglegging");
 	}
 }
