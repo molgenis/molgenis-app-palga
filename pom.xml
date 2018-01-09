@@ -8,7 +8,7 @@
     </parent>
     <artifactId>molgenis-palga</artifactId>
     <packaging>war</packaging>
-    <version>1.4.6-PALGA</version>
+    <version>1.4.7-PALGA-SNAPSHOT</version>
   
     <build>
         <resources>
