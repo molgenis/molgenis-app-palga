@@ -18,8 +18,10 @@
 
     <properties>
         <registry.id>registry.molgenis.org</registry.id>
+        <skipLocalStaging>true</skipLocalStaging>
+        <gpg.skip>true</gpg.skip>
     </properties>
-    
+
     <distributionManagement>
         <snapshotRepository>
             <id>${registry.id}</id>
