@@ -11,24 +11,29 @@
     <version>1.4.7-PALGA-SNAPSHOT</version>
   
     <scm>
-        <developerConnection>scm:git:https://${env.GITHUB_USER}:${env.GITHUB_TOKEN}@github.com/molgenis/molgenis-palga.git</developerConnection>
-        <url>https://github.com/molgenis/molgenis-palga</url>
+        <connection>scm:git:https://github.com/molgenis/molgenis-app-palga.git</connection>
+        <developerConnection>scm:git:https://github.com/molgenis/molgenis-app-palga.git</developerConnection>
+        <url>https://github.com/molgenis/molgenis-app-palga</url>
         <tag>HEAD</tag>
     </scm>
 
+    <!--
+        We inherit the nexus staging plugin from molgenis parent project but
+        actually want a simple deploy to registry.molgenis.org
+    -->
     <properties>
-        <registry.id>registry.molgenis.org</registry.id>
         <skipLocalStaging>true</skipLocalStaging>
         <gpg.skip>true</gpg.skip>
+        <project.scm.id>github</project.scm.id>
     </properties>
 
     <distributionManagement>
         <snapshotRepository>
-            <id>${registry.id}</id>
+            <id>registry.molgenis.org</id>
             <url>https://registry.molgenis.org/repository/maven-snapshots</url>
         </snapshotRepository>
         <repository>
-            <id>${registry.id}</id>
+            <id>registry.molgenis.org</id>
             <url>https://registry.molgenis.org/repository/maven-releases</url>
         </repository>
     </distributionManagement>
@@ -78,6 +83,11 @@
 		<!-- web server -->
 		<pluginManagement>
 			<plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-release-plugin</artifactId>
+                    <version>3.0.0-M1</version>                
+                </plugin>
 				<plugin>
 	                <groupId>org.eclipse.jetty</groupId>
 					<artifactId>jetty-maven-plugin</artifactId>
