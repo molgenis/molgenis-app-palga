@@ -7,13 +7,13 @@
     </parent>
     <artifactId>molgenis-palga</artifactId>
     <packaging>war</packaging>
-    <version>1.4.7-PALGA</version>
+    <version>1.4.8-PALGA-SNAPSHOT</version>
   
     <scm>
         <connection>scm:git:https://github.com/molgenis/molgenis-app-palga.git</connection>
         <developerConnection>scm:git:https://github.com/molgenis/molgenis-app-palga.git</developerConnection>
         <url>https://github.com/molgenis/molgenis-app-palga</url>
-        <tag>molgenis-palga-1.4.7-PALGA</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <!--
